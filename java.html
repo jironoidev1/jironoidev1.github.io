@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    .view{
+        display: flex;
+        align-content: center;
+        align-self: center;
+    }
+    #player{
+        height: 100%;
+        width: 30%;
+        border: 2px solid black;
+        text-align: center;
+    }
+    #bot{
+        height: 100%;
+        width: 30%;
+        border: 2px solid black;
+        text-align: center;
+    }
+    #result{
+        height: 100%;
+        width: 30%;
+        border: 2px solid black;
+        text-align: center;
+    }
+    
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java</title>
+</head>
+    <body>
+
+        <div class="view">
+            <div id="player">Player : </div>
+            <div id="bot">bot : </div>
+            <div id="result">result : </div>
+        </div>
+        <p>Hello world</p>
+        
+        <button onclick = "hammer()">ค้อน</button>
+        <button onclick = "scissors()">กรรไกร</button>
+        <button onclick = "paper()">กระดาษ</button>
+        <br>
+        <button onclick="send()">Send!!!</button>
+        <script src="script.js"></script>
+    </body>
+</html>

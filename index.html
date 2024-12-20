@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Loved+by+the+King&display=swap" rel="stylesheet">
+    <title>hehe</title>
+
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background-color: aqua;
+        background-size: cover;
+      }
+      h1 {
+        width: 100%;
+        height: 100vh;
+        line-height: 60vh;
+        text-align: center;
+        display: block;
+        font-size: 60px;
+        font-family: "Loved by the King" ;
+      }
+
+      p {
+        font-size: 24px;
+        font-family: "Loved by the King" ;
+      }
+      .view {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+      .block {
+        height: 400px;
+        width: 400px;
+        margin: 50px;
+        border: 1.5mm solid black;
+        border-radius: 32px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        justify-self: left;
+        background-size: cover;
+      }
+
+      .block2 {
+        height: 400px;
+        width: 30%;
+        margin: 50px;
+        border: 1.5mm solid black;
+        border-radius: 32px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        position: relative;
+        flex-wrap: wrap;
+        justify-self: right;
+        background-size: cover;
+        text-align: center;
+      }
+
+      .block:nth-child(1) {
+        background-image: url("pika.jpg");
+      }
+      .block2:nth-child(2) {
+        background-color: aliceblue;
+        height: 400px;
+      }
+
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes appear2 {
+        from {
+          opacity: 0;
+          transform: translateX(300%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .block {
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 35%;
+      }
+
+      .block2 {
+        animation: appear2 linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 35%;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1>About Pikachu</h1>
+    <div class="view">
+      <div class="block"></div>
+      <div class="block2">
+        <p>ชื่อ: Pikachu<br>
+            ประเภท: โปเกมอนไฟฟ้า (Electric Pokémon)<br>
+            ตำแหน่ง: เพื่อนคู่หูของแอช เคตชัม (Ash Ketchum's Partner)<br>
+            พลังพิเศษ: การปล่อยกระแสไฟฟ้าจากแก้ม<br>
+            ท่าโจมตีหลัก: Thunderbolt, Thunder, Volt Tackle<br>
+            คติประจำตัว: "เพื่อนแท้จะอยู่ข้างๆ เสมอ"</p>
+      </div>
+    </div>
+
+  </body>
+</html>

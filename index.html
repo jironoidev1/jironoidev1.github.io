@@ -17,14 +17,18 @@
         background-color: aqua;
         background-size: cover;
       }
-      h1 {
-        width: 100%;
-        height: 100vh;
-        line-height: 60vh;
+
+      .parallelogram{
+        margin-top: 30vh;
+        width: 60%;
+	    height: 30%;
+        font-size: 120px;
         text-align: center;
-        display: block;
-        font-size: 60px;
-        font-family: "Loved by the King" ;
+        border: 5px solid black;
+        border-radius: 12px;
+	    transform: skew(20deg);
+	    background: #ff3636;
+        justify-self: center;
       }
 
       p {
@@ -32,11 +36,12 @@
         font-family: "Loved by the King" ;
       }
       .view {
-        display: flex;
+        /* display: flex; */
         gap: 1rem;
         align-items: center;
       }
-      .block {
+
+      .Profile {
         height: 400px;
         width: 400px;
         margin: 50px;
@@ -45,32 +50,62 @@
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
           rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
           rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-        justify-self: left;
+        justify-self: center;
         background-size: cover;
+        background-image: url("pika.jpg");
+        margin-top: 15vh;
+        border-radius: 100%;
+      }
+
+      .block {
+        height: 400px;
+        width: 80%;
+        margin: 50px;
+        border: 2px solid black;
+        border-radius: 32px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        justify-self: center;
+        background-size: cover;
+        text-align: center;
+        font-size: 32px;
       }
 
       .block2 {
         height: 400px;
-        width: 30%;
+        width: 80%;
         margin: 50px;
-        border: 1.5mm solid black;
+        border: 2px solid black;
         border-radius: 32px;
         box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
           rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
           rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
         position: relative;
         flex-wrap: wrap;
-        justify-self: right;
+        justify-self: center;
         background-size: cover;
         text-align: center;
+        font-size: 32px;
       }
 
-      .block:nth-child(1) {
-        background-image: url("pika.jpg");
-      }
-      .block2:nth-child(2) {
+      .block:nth-child(2) {
         background-color: aliceblue;
-        height: 400px;
+        height: 100px;
+      }
+      .block2:nth-child(3) {
+        background-color: aliceblue;
+        height: 100px;
+      }
+      .block:nth-child(4) {
+        background-color: rgb(204, 255, 0);
+        height: 120px;
+        width: 50%;
+        font-size: 100px;
+      }
+      .block2:nth-child(5) {
+        background-color: aliceblue;
+        height: 500px;
       }
 
 
@@ -107,22 +142,24 @@
         animation-timeline: view();
         animation-range: entry 0% cover 35%;
       }
+      .margin {
+        margin-top: 180px;
+        height: 20px;
+      }
     </style>
   </head>
   <body>
     
-    <h1>About Pikachu</h1>
+    <div class="parallelogram">My Portfolio</div>
     <div class="view">
-      <div class="block"></div>
-      <div class="block2">
-        <p>ชื่อ: Pikachu<br>
-            ประเภท: โปเกมอนไฟฟ้า (Electric Pokémon)<br>
-            ตำแหน่ง: เพื่อนคู่หูของแอช เคตชัม (Ash Ketchum's Partner)<br>
-            พลังพิเศษ: การปล่อยกระแสไฟฟ้าจากแก้ม<br>
-            ท่าโจมตีหลัก: Thunderbolt, Thunder, Volt Tackle<br>
-            คติประจำตัว: "เพื่อนแท้จะอยู่ข้างๆ เสมอ"</p>
-      </div>
+      <div class="Profile"></div>
+      <div class="block">Puwit Rangsiwong</div>
+      <div class="block2">Programmer / Computer Science</div>
+      <div class="block">Profile</div>
+      <div class="block2">Programmer / Computer Science</div>
     </div>
+
+    <div class="margin"></div>
 
   </body>
 </html>

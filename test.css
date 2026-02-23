@@ -1,0 +1,28 @@
+body {
+    user-select: none; 
+    -webkit-user-select: none; /* สำหรับ Chrome, Safari, Edge */
+    -moz-user-select: none;    /* สำหรับ Firefox */
+    -ms-user-select: none;     /* สำหรับ IE/Edge รุ่นเก่า */
+    
+    background-color: black;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* กันการลากรูปภาพ (ที่เป็นเงาสีขาวๆ เวลาลาก) */
+img {
+    -webkit-user-drag: none;
+    cursor: pointer;
+    max-width: 80%; /* ปรับขนาดให้พอดีจอเครื่อง ASUS ของคุณ */
+}
+
+#tur{
+    width: 80vw;
+    height: 80vh;
+    border-radius: 5%;
+    background-image: url(sleep.jpg);
+}
